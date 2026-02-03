@@ -33,4 +33,4 @@
 
 ---
 
-**Muhammed** tarafından geliştirilmiştir. 📈
+**MuhammedEdev** tarafından geliştirilmiştir. 📈
