@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>CoreAdmin Ultra | Pro Dashboard</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;500;800&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="bg-blobs"><span class="blob blob-1"></span><span class="blob blob-2"></span></section>
+
+    <aside class="sidebar">
+        <header class="logo"><span class="logo-icon">C</span>
+            <h2>CORE<span>PRO</span></h2>
+        </header>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="#" class="active"><i class="fas fa-th-large"></i> <span>Dashboard</span></a></li>
+                <li><a href="#"><i class="fas fa-bolt"></i> <span>Aktiviteler</span></a></li>
+                <li><a href="#"><i class="fas fa-layer-group"></i> <span>Projeler</span></a></li>
+                <li><a href="#"><i class="fas fa-wallet"></i> <span>Finans</span></a></li>
+                <li><a href="#"><i class="fas fa-shield-halved"></i> <span>Güvenlik</span></a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="content-area">
+        <header class="main-header">
+            <section class="header-titles">
+                <h1>Sistem Özeti</h1>
+                <p id="liveClock">Yükleniyor...</p>
+            </section>
+            <figure class="user-pill">
+                <img src="https://ui-avatars.com/api/?name=MuhammedE+Dv&background=6366f1&color=fff" alt="User">
+                <figcaption>
+                    <strong>Muhammed E.</strong>
+                    <span class="separator">|</span>
+                    <span class="job-title">Frontend Developer</span>
+                </figcaption>
+            </figure>
+        </header>
+
+        <section class="grid-stats">
+            <article class="glass-card stat">
+                <header><i class="fas fa-chart-line"></i>
+                    <h3>Aylık Kâr</h3>
+                </header>
+                <p>₺<span class="counter" data-target="128500">0</span></p>
+            </article>
+            <article class="glass-card stat">
+                <header><i class="fas fa-users"></i>
+                    <h3>Aktif Kullanıcı</h3>
+                </header>
+                <p><span class="counter" data-target="8420">0</span></p>
+            </article>
+        </section>
+
+        <section class="glass-card chart-container">
+            <header class="chart-header">
+                <h3>Performans Analizi</h3>
+                <select id="periodSelect">
+                    <option value="7">Son 7 Gün</option>
+                    <option value="30">Son 30 Gün</option>
+                </select>
+            </header>
+            <figure class="chart-wrapper">
+                <canvas id="performanceChart"></canvas>
+            </figure>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
